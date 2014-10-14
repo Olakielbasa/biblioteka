@@ -3,15 +3,30 @@ package pl.altkom.biblioteka.model;
 import java.io.Serializable;
 import java.util.Comparator;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import javax.validation.constraints.Pattern;
+import org.hibernate.validator.constraints.Range;
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotEmpty;
+        
 public class Ksiazka implements Serializable, Comparable {
 
     private long id;
+    @NotEmpty(message="Pole nie może być puste")
     private String tytul;
+    @NotEmpty(message="Pole nie może być puste")
     private String opis;
+    @NotEmpty(message="Pole nie może być puste")
     private String imieAutora;
+    @NotEmpty(message="Pole nie może być puste")
     private String nazwiskoAutora;
     private String pochodzenieAutora;
-    private int ilosc;
+    @NotEmpty(message="Pole nie może być puste")
+    @Min(1)
+    private Integer ilosc;
+    @NotEmpty(message="Pole nie może być puste")
     private String kategoria;
 
 
@@ -82,7 +97,7 @@ public class Ksiazka implements Serializable, Comparable {
         return ilosc;
     }
 
-    public void setIlosc(int ilosc) {
+    public void setIlosc(Integer ilosc) {
         this.ilosc = ilosc;
     }
 

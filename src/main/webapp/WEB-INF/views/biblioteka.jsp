@@ -16,30 +16,37 @@
            
             <table id="t1">
                 <tr>
-		<td><label for="tytul">Tytu?:</label></td> </label></td>
-                <td><form:input path="tytul" required="true"/></td>
+		<td><label for="tytul">Tytu?:</label></td>
+                <td><form:input path="tytul"/></td>
+                  <td><form:errors path="tytul" cssStyle="color: #ff0000;"/></td>
                 </tr>
 		<tr>
 		<td><label for="opis">Opis:</label></td>      
-                <td><form:input path="opis" required="true"/></td>
+                <td><form:input path="opis"/></td>
+                  <td><form:errors path="opis" cssStyle="color: #ff0000;"/></td>
                 </tr>
 		<tr>
                <td><label for="imieAutora"> Imi?: </label></td>     
-               <td><form:input path="imieAutora" required="true" /></td>
+               <td><form:input path="imieAutora" /></td>
+                 <td><form:errors path="imieAutora" cssStyle="color: #ff0000;"/></td>
                </tr>
                <td><label for="nazwiskoAutora"> Nazwisko: </label></td>     
-               <td><form:input path="nazwiskoAutora" required="true" /></td>
+               <td><form:input path="nazwiskoAutora" /></td>
+               <td><form:errors path="nazwiskoAutora" cssStyle="color: #ff0000;"/></td>
                </tr>
                <td><label for="pochodzenieAutora"> Pochodzenie Autora: </label></td>     
-               <td><form:input path="pochodzenieAutora" required="true" /></td>
+               <td><form:input path="pochodzenieAutora"/></td>
+               <td><form:errors path="pochodzenieAutora" cssStyle="color: #ff0000;"/></td>
                </tr>
 		<tr>
 		<td><label for="ilosc">Ilo&#347&#263:</label></td>     
-                <td><form:input path="ilosc" required="true"/></td>
+                <td><form:input path="ilosc"/></td>
+                 <td><form:errors path="pochodzenieAutora" cssStyle="color: #ff0000;"/></td>
                 </tr>
 		<tr>
                 <td><label for="kategoria">Kategoria:</label></td> 
-                <td><form:input path="kategoria" required="true" /></td>
+                <td><form:input path="kategoria"/></td>
+                 <td><form:errors path="kategoria" cssStyle="color: #ff0000;"/></td>
                 </tr>
 		</table>
                 <br>
