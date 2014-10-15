@@ -13,6 +13,7 @@ import pl.altkom.biblioteka.model.ComparatorByKat;
 import pl.altkom.biblioteka.model.ComparatorByNazwa;
 import pl.altkom.biblioteka.model.ComparatorByNazwiskoAutora;
 import pl.altkom.biblioteka.model.ComparatorByOpis;
+import pl.altkom.biblioteka.model.ComparatorByPochodzenieAutora;
 import pl.altkom.biblioteka.model.Ksiazka;
 
 @Repository
@@ -102,13 +103,19 @@ public class BibliotekaDaoDerby implements BibliotekaDao {
         if (sort == 2) {
             Collections.sort(ksiazki, new ComparatorByOpis());
         }
-        if (sort == 3) {
-            Collections.sort(ksiazki, new ComparatorByNazwiskoAutora());
+        if (sort == 3){
+            Collections.sort(ksiazki, new ComparatorByPochodzenieAutora());
         }
         if (sort == 4) {
+            Collections.sort(ksiazki, new ComparatorByNazwiskoAutora());
+        }
+        if (sort == 5){
+            Collections.sort(ksiazki, new ComparatorByPochodzenieAutora());
+        }
+        if (sort == 6) {
             Collections.sort(ksiazki, new ComparatorByIlosc());
         }
-        if (sort == 5) {
+        if (sort == 7) {
             Collections.sort(ksiazki, new ComparatorByKat());
         }
 
