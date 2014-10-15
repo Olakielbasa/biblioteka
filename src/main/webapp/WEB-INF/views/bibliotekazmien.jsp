@@ -3,12 +3,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Zmie? rekord</title>
+<title>Zmie&#324; rekord</title>
         <link rel="icon" href="<c:url value="/resources/favicon.ico" />" type="image/x-icon">
           <link href="${pageContext.request.contextPath}/resources/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<h1>Zmiana rekordu w bibliotece</h1>
+<h1>Zmie&#324; rekord</h1>
 	<form:form modelAttribute="ksiazka">
 		<table id="t1">
                     <tr>
