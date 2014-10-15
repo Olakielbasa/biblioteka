@@ -29,11 +29,15 @@ table#t2 td,  th {
     text-align: left;
     padding-top: 5px;
     padding-bottom: 4px;
-    background-color: #dae956 ;
-    
+    background-color: azure ;
+}  
  table#t2 tr.alt td{
     color: #000000;
-    background-color: whitesmoke;
+    background-color: azure;
+}
+table#t2 th{
+    
+    background-color: tomato;
 }
 form {
     text-align: center;

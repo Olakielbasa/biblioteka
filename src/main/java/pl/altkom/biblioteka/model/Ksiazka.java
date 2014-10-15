@@ -22,10 +22,9 @@ public class Ksiazka implements Serializable, Comparable {
     private String imieAutora;
     @NotEmpty(message="Pole nie może być puste")
     private String nazwiskoAutora;
-    private String pochodzenieAutora;
     @NotEmpty(message="Pole nie może być puste")
-    @Min(1)
-    private Integer ilosc;
+    private String pochodzenieAutora;
+    private int ilosc;
     @NotEmpty(message="Pole nie może być puste")
     private String kategoria;
 
@@ -97,7 +96,7 @@ public class Ksiazka implements Serializable, Comparable {
         return ilosc;
     }
 
-    public void setIlosc(Integer ilosc) {
+    public void setIlosc(int ilosc) {
         this.ilosc = ilosc;
     }
 
