@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Zmiana rekordu w bibliotece</title>
+<title>Zmie? rekord</title>
         <link rel="icon" href="<c:url value="/resources/favicon.ico" />" type="image/x-icon">
           <link href="${pageContext.request.contextPath}/resources/style.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -64,7 +64,7 @@
                     </tr>
                 </table>
                 <br/>
-		<input type="submit" value="Zmie&#324;" />
+		<input id="zmien" type="submit" value="Zmie&#324;"  />
 		<form:hidden path="id"/>
 	</form:form>
 </body>
