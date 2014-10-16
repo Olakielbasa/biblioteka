@@ -14,30 +14,42 @@
                     <tr>
                         <td><label for="tytul">Tytu&#322:</label></td>
                         <td><form:input path="tytul"/></td>
+                    </tr>
+                    <tr><td></td>
                         <td><form:errors path="tytul" cssStyle="color: #ff0000;"/></td>
                     </tr>
                     <tr>
                         <td><label for="opis">Opis:</label></td>      
                         <td><form:input path="opis"/></td>
+                        </tr>
+                    <tr><td></td>
                         <td><form:errors path="opis" cssStyle="color: #ff0000;"/></td>
                     </tr>
                     <tr>
                         <td><label for="imieAutora"> Imi&#281: </label></td>     
                         <td><form:input path="imieAutora" /></td>
+                        </tr>
+                    <tr><td></td>
                         <td><form:errors path="imieAutora" cssStyle="color: #ff0000;"/></td>
                     </tr>
                     <tr>
                     <td><label for="nazwiskoAutora"> Nazwisko: </label></td>     
                     <td><form:input path="nazwiskoAutora" /></td>
+                    </tr>
+                    <tr><td></td>
                     <td><form:errors path="nazwiskoAutora" cssStyle="color: #ff0000;"/></td>
                     </tr>
                     <td><label for="pochodzenieAutora"> Pochodzenie Autora: </label></td>     
                     <td><form:input path="pochodzenieAutora"/></td>
+                    </tr>
+                    <tr><td></td>
                     <td><form:errors path="pochodzenieAutora" cssStyle="color: #ff0000;"/></td>
                     </tr>
                     <tr>
                         <td><label for="ilosc">Ilo&#347&#263:</label></td>     
                         <td><form:input path="ilosc" type="number"/></td>
+                        </tr>
+                    <tr><td></td>
                         <td><form:errors path="ilosc" cssStyle="color: #ff0000;"/></td>
                     </tr>
                     
@@ -60,6 +72,8 @@
                                 <option value="Thriller">Thriller</option>
                             </select>
                         </td>
+                        </tr>
+                    <tr><td></td>
                         <td><form:errors path="kategoria" cssStyle="color: #ff0000;"/></td>
                     </tr>
                 </table>

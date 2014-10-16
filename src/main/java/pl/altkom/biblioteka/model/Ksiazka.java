@@ -19,11 +19,15 @@ public class Ksiazka implements Serializable, Comparable {
     @NotEmpty(message="Pole nie może być puste")
     private String opis;
     @NotEmpty(message="Pole nie może być puste")
+    @Pattern(regexp="[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ\\\\.\\\\-\\\\\\s]*", message="Pole nie może zawierać cyfr i znaków specjalnych")
     private String imieAutora;
+    @Pattern(regexp="[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ\\\\.\\\\-\\\\\\s]*", message="Pole nie może zawierać cyfr i znaków specjalnych")
     @NotEmpty(message="Pole nie może być puste")
     private String nazwiskoAutora;
+    @Pattern(regexp="[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ\\\\.\\\\-\\\\\\s]*", message="Pole nie może zawierać cyfr i znaków specjalnych")
     @NotEmpty(message="Pole nie może być puste")
     private String pochodzenieAutora;
+    @Range(min=0, max=999, message="Wartość pomiędzy 0-999")
     private int ilosc;
     @NotEmpty(message="Pole nie może być puste")
     private String kategoria;
