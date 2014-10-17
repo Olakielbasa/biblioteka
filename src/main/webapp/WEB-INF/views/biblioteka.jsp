@@ -9,9 +9,11 @@
     </head>
 
     <body>
-        <h1>
-            Biblioteka
-        </h1>
+        <header>
+            <h1>
+                Biblioteka
+            </h1>
+        </header>
         <div id="left">
             <form:form modelAttribute="ksiazka">
 

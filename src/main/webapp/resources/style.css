@@ -11,6 +11,13 @@ h1{background-repeat: no-repeat;
    letter-spacing: 5px;
    text-align: center;}
 
+header {
+    background-color:whitesmoke;
+    color:black;
+    text-align:center;
+    font-family:arial,helvetica, sens-serif;
+    padding:5px; 
+}
 table#t2 {
     font-family: arial,helvetica, sens-serif;
     width:944px;
@@ -43,6 +50,11 @@ table#t1 {
     border-collapse: collapse;
     margin-left: 0px;
 }
+#centre{
+    width:350px;
+    padding:10px; 
+    align-items: center;
+}
 #left {
     line-height:15px;
     /*background-color:black;*/
@@ -65,9 +77,14 @@ table#t1 {
     margin-left: 10px;
 }
 footer{
-    background-color: black;
+    /*background-color: black;*/
+    /*text-align:center;*/
+    /*font-size: medium;*/
+    /*margin-top: 600px;*/
+    background-color:black;
+    color:white;
+    clear:both;
     text-align:center;
-    font-size: medium;
-    margin-top: 600px;
+    padding:5px;
         
 }

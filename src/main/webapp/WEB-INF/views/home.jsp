@@ -8,10 +8,11 @@
                <link rel="icon" href="<c:url value="/resources/favicon.ico" />" type="image/x-icon">
     </head>
 <body>
-<h1>
-	Biblioteka
-</h1>
-
+    <header>
+        <h1>
+            Biblioteka
+        </h1>
+    </header>
 <P>  The time on the server is ${serverTime}. </P>
 
 <ul>
