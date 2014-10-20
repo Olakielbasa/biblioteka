@@ -78,7 +78,12 @@ public class BibliotekaController {
     }
 
     @RequestMapping(value = "/bibliotekazmien", method = RequestMethod.POST)
-    public String bibliotekaDodaj(@ModelAttribute Ksiazka ksiazka, Model model) {
+    public String bibliotekaDodaj(@Valid @ModelAttribute Ksiazka ksiazka,
+            BindingResult result, Model model) {
+         if (result.hasErrors()) {
+              model.addAttribute("biblioteka", md.getAllSortedKsiazka(0, ""));
+            return "bibliotekazmien";
+         }
         md.updateKsiazka(ksiazka);
         model.addAttribute(new Ksiazka());
         model.addAttribute("biblioteka", md.getAllSortedKsiazka(0, ""));
