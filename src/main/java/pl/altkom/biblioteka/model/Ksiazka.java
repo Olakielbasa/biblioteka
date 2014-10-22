@@ -10,29 +10,27 @@ import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
-        
+
 public class Ksiazka implements Serializable, Comparable {
 
     private long id;
-    @NotEmpty(message="Pole nie może być puste")
+    @NotEmpty(message = "Pole nie może być puste")
     private String tytul;
-    @NotEmpty(message="Pole nie może być puste")
+    @NotEmpty(message = "Pole nie może być puste")
     private String opis;
-    @NotEmpty(message="Pole nie może być puste")
-    @Pattern(regexp="[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ\\\\.\\\\-\\\\\\s]*", message="Pole nie może zawierać cyfr i znaków specjalnych")
+    @NotEmpty(message = "Pole nie może być puste")
+    @Pattern(regexp = "[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+", message = "Pole nie może zawierać cyfr i znaków specjalnych")
     private String imieAutora;
-    @Pattern(regexp="[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ\\\\.\\\\-\\\\\\s]*", message="Pole nie może zawierać cyfr i znaków specjalnych")
-    @NotEmpty(message="Pole nie może być puste")
+    @Pattern(regexp = "[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+", message = "Pole nie może zawierać cyfr i znaków specjalnych")
+    @NotEmpty(message = "Pole nie może być puste")
     private String nazwiskoAutora;
-    @Pattern(regexp="[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ\\\\.\\\\-\\\\\\s]*", message="Pole nie może zawierać cyfr i znaków specjalnych")
-    @NotEmpty(message="Pole nie może być puste")
+    @Pattern(regexp = "[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ\\\\.\\\\-\\\\\\s]*", message = "Pole nie może zawierać cyfr i znaków specjalnych")
+    @NotEmpty(message = "Pole nie może być puste")
     private String pochodzenieAutora;
-    @Range(min=0, max=999, message="Wartość pomiędzy 0-999")
+    @Range(min = 0, max = 999, message = "Wartość pomiędzy 0-999")
     private int ilosc;
-    @NotEmpty(message="Pole nie może być puste")
+    @NotEmpty(message = "Pole nie może być puste")
     private String kategoria;
-
-
 
     public Ksiazka(long id, String tytul, String opis, String imieAutora, String nazwiskoAutora, String pochodzenieAutora, int ilosc, String kategoria) {
         this.id = id;

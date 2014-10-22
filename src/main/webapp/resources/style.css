@@ -11,12 +11,18 @@ h1{background-repeat: no-repeat;
    letter-spacing: 5px;
    text-align: center;}
 
+A{text-decoration:none;
+  color: #000000;
+}
+
+
 header {
     background-color:whitesmoke;
     color:black;
     text-align:center;
     font-family:arial,helvetica, sens-serif;
     padding:5px; 
+
 }
 table#t2 {
     font-family: arial,helvetica, sens-serif;
@@ -67,12 +73,12 @@ table#t1 {
 }
 #right {
     width:0px;
-    float:left;
+
     padding-left:10px;
     padding-top:0px
 }
 #zmien{
-    
+
     float:left;
     margin-left: 10px;
 }
@@ -86,5 +92,5 @@ footer{
     clear:both;
     text-align:center;
     padding:5px;
-        
+
 }

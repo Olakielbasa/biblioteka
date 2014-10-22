@@ -14,10 +14,10 @@
                 Biblioteka
             </h1>
         </header>
-        <div id="left">
+        <center>
             <form:form modelAttribute="ksiazka">
 
-                <table id="t1">
+                <center><table id="t1">
                     <tr>
                         <td><label for="tytul">Tytu&#322:</label></td>
                         <td><form:input path="tytul"/></td>
@@ -83,38 +83,33 @@
                     <tr><td></td>
                         <td><form:errors path="kategoria" cssStyle="color: #ff0000;"/></td>
                     </tr>
-                </table>
+                </table></center>
                 <br/>
                 <input type="submit" value="Dodaj" formaction="biblioteka"
                        formmethod="post" />
             </form:form>
-            <form action="biblioteka" method="get">
-                <input type="text" value=".*" name="wyrazenie" ><br> 
-                <select name="kategoria">
-                    <option value="1" >Tytu&#322</option>
-                    <option value="2" >Opis</option>
-                    <option value="5" >Kategoria</option>
-                </select><br>
-                <input type="submit" name="filter" value="Filtruj" >
-            </form>
-        </div>
-        <div id="right">
+            
+        </center>
+    <center>
+    <button><a href="<c:url value="/" />" >Strona g&#322&#243wna</a></button></center>
+    </br> <center>
+                <button><a href="<c:url value="/home2" />" >Katalog ksi&#261&#380ek</a></button></center></br>
+        <center>
             <table id="t2">
                 <tr>
-                    <th><a href="biblioteka?sort=0">Id</a></th>
-                    <th><a href="biblioteka?sort=1">Tytu&#322</a></th>
-                    <th><a href="biblioteka?sort=2">Opis</a></th>
-                    <th><a href="biblioteka?sort=3">Imi&#281 Autora</a></th>
-                    <th><a href="biblioteka?sort=4">Nazwisko Autora</a></th>
-                    <th><a href="biblioteka?sort=5">Pochodzenie Autora</a></th>
-                    <th><a href="biblioteka?sort=6">Ilo&#347&#263</a></th>
-                    <th><a href="biblioteka?sort=7">Kategoria</a></th>
-                    <th>Usu&#324;</th>
-                    <th>Zmie&#324;</th>
+                   
+                    <th><a href="biblioteka?sort=1" style="color: blue">Tytu&#322</a></th>
+                    <th><a href="biblioteka?sort=2" style="color: blue">Opis</a></th>
+                    <th><a href="biblioteka?sort=3" style="color: blue">Imi&#281 Autora</a></th>
+                    <th><a href="biblioteka?sort=4" style="color: blue">Nazwisko Autora</a></th>
+                    <th><a href="biblioteka?sort=5" style="color: blue">Pochodzenie Autora</a></th>
+                    <th><a href="biblioteka?sort=6" style="color: blue">Ilo&#347&#263</a></th>
+                    <th><a href="biblioteka?sort=7" style="color: blue">Kategoria</a></th>
+             
                 </tr>
                 <c:forEach var="ksiazka" items="${biblioteka}">
                     <tr>
-                        <td><c:out value="${ksiazka.id+1}" /></td>
+                       
                         <td><c:out value="${ksiazka.tytul}" /></td>
                         <td><c:out value="${ksiazka.opis}" /></td>
                         <td><c:out value="${ksiazka.imieAutora}" /></td>
@@ -122,13 +117,12 @@
                         <td><c:out value="${ksiazka.pochodzenieAutora}" /></td>
                         <td><c:out value="${ksiazka.ilosc}" /></td>
                         <td><c:out value="${ksiazka.kategoria}" /></td>
-                        <td><a href="biblioteka?id=${ksiazka.id}&action=delete">Usu&#324;</a></td>
-                        <td><a href="bibliotekazmien?id=${ksiazka.id}&action=update">Zmie&#324;</a>
-                        </td>
+                        
                     </tr>
                 </c:forEach>
             </table>
-        </div>
+        </center>
+    </br>
         <footer>
             <p id="1">Biblioteka</p>
         </footer>

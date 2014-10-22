@@ -3,27 +3,30 @@
 <html>  
     <head>
         <title>Home</title>
-          <link href="${pageContext.request.contextPath}/resources/style.css" rel="stylesheet" type="text/css"/>
+        <link href="${pageContext.request.contextPath}/resources/style.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-               <link rel="icon" href="<c:url value="/resources/favicon.ico" />" type="image/x-icon">
+        <link rel="icon" href="<c:url value="/resources/favicon.ico" />" type="image/x-icon">
     </head>
-<body>
-    <header>
-        <h1>
-            Biblioteka
-        </h1>
-    </header>
-<P>  The time on the server is ${serverTime}. </P>
+  
+    <body>
 
-<ul>
-		<li>
-			<a href="<c:url value="/biblioteka" />" >Biblioteka</a>
-                        
-		</li>
-               <li> <a href="<c:url value="/bibliotekazmien"/>">Biblioteka zmien</a> </li>
-</ul>
-         <footer>
-           <p id="1">Biblioteka</p>
-</footer>
+        <header>
+            <h1>
+                Biblioteka
+            </h1>
+        </header>
+
+    <center>
+
+        <center>
+            <button><a id="1" href="<c:url value="/biblioteka" />">Dodaj ksi&#261&#380k&#281</a></button></center>
+        <center>
+            </br>
+            <button><a id="1" href="<c:url value="/home2"/>">Edytuj katalog</a></button></center> 
+        </br>
+    </center>
+    <footer>
+        <p id="1">Biblioteka</p>
+    </footer>
 </body>
 </html>
